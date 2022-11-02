@@ -1,0 +1,113 @@
+@font-face {
+  font-family: BemboStd;
+  src: url(assets/BemboStd.woff2);
+}
+body {
+  font-family: BemboStd;
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 178px;
+  margin: auto;
+  z-index: 1;
+  display: flex;
+}
+.logo {
+  width: 65%;
+  margin: auto;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.frame-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.copy-section {
+  position: absolute;
+  bottom: 0;
+  background-color: #f9f7f2;
+  height: 27%;
+  width: 100%;
+}
+.copy {
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  margin: 20px auto;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left,
+.right {
+  cursor: pointer;
+}
+.left {
+  transform: rotate(180deg);
+  width: 15%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 3;
+}
+.arrow {
+  width: 7px;
+  padding: 10px;
+  z-index: 4;
+}
+.middle {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 25px;
+  text-align: center;
+}
+.right {
+  width: 15%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta {
+  width: 27%;
+  position: absolute;
+  bottom: 30px;
+}
+.fade-in {
+  opacity: 0;
+}
